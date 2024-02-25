@@ -1,0 +1,4 @@
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/GLTest.dir
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/CC.dir
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
