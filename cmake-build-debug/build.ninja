@@ -88,6 +88,12 @@ build CMakeFiles/CC.dir/main2.cpp.obj: CXX_COMPILER__CC_Debug C$:/Users/Mohamed/
   OBJECT_DIR = CMakeFiles\CC.dir
   OBJECT_FILE_DIR = CMakeFiles\CC.dir
 
+build CMakeFiles/CC.dir/main3.cpp.obj: CXX_COMPILER__CC_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/main3.cpp || cmake_object_order_depends_target_CC
+  DEP_FILE = CMakeFiles\CC.dir\main3.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\CC.dir
+  OBJECT_FILE_DIR = CMakeFiles\CC.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CC
@@ -96,7 +102,7 @@ build CMakeFiles/CC.dir/main2.cpp.obj: CXX_COMPILER__CC_Debug C$:/Users/Mohamed/
 #############################################
 # Link the executable CC.exe
 
-build CC.exe: CXX_EXECUTABLE_LINKER__CC_Debug CMakeFiles/CC.dir/main2.cpp.obj
+build CC.exe: CXX_EXECUTABLE_LINKER__CC_Debug CMakeFiles/CC.dir/main2.cpp.obj CMakeFiles/CC.dir/main3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CC.dir
@@ -105,6 +111,72 @@ build CC.exe: CXX_EXECUTABLE_LINKER__CC_Debug CMakeFiles/CC.dir/main2.cpp.obj
   TARGET_FILE = CC.exe
   TARGET_IMPLIB = libCC.dll.a
   TARGET_PDB = CC.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target temp
+
+
+#############################################
+# Order-only phony target for temp
+
+build cmake_object_order_depends_target_temp: phony || CMakeFiles/temp.dir
+
+build CMakeFiles/temp.dir/main3.cpp.obj: CXX_COMPILER__temp_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/main3.cpp || cmake_object_order_depends_target_temp
+  DEP_FILE = CMakeFiles\temp.dir\main3.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\temp.dir
+  OBJECT_FILE_DIR = CMakeFiles\temp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target temp
+
+
+#############################################
+# Link the executable temp.exe
+
+build temp.exe: CXX_EXECUTABLE_LINKER__temp_Debug CMakeFiles/temp.dir/main3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\temp.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = temp.exe
+  TARGET_IMPLIB = libtemp.dll.a
+  TARGET_PDB = temp.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target stringProcessing
+
+
+#############################################
+# Order-only phony target for stringProcessing
+
+build cmake_object_order_depends_target_stringProcessing: phony || CMakeFiles/stringProcessing.dir
+
+build CMakeFiles/stringProcessing.dir/StringProcessing.cpp.obj: CXX_COMPILER__stringProcessing_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/cmake-build-debug/StringProcessing.cpp || cmake_object_order_depends_target_stringProcessing
+  DEP_FILE = CMakeFiles\stringProcessing.dir\StringProcessing.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\stringProcessing.dir
+  OBJECT_FILE_DIR = CMakeFiles\stringProcessing.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stringProcessing
+
+
+#############################################
+# Link the executable stringProcessing.exe
+
+build stringProcessing.exe: CXX_EXECUTABLE_LINKER__stringProcessing_Debug CMakeFiles/stringProcessing.dir/StringProcessing.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\stringProcessing.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = stringProcessing.exe
+  TARGET_IMPLIB = libstringProcessing.dll.a
+  TARGET_PDB = stringProcessing.exe.dbg
 
 
 #############################################
@@ -136,6 +208,10 @@ build CC: phony CC.exe
 
 build GLTest: phony GLTest.exe
 
+build stringProcessing: phony stringProcessing.exe
+
+build temp: phony temp.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +220,7 @@ build GLTest: phony GLTest.exe
 #############################################
 # Folder: C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug
 
-build all: phony GLTest.exe CC.exe
+build all: phony GLTest.exe CC.exe temp.exe stringProcessing.exe
 
 # =============================================================================
 # Built-in targets
