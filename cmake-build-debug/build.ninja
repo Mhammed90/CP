@@ -82,8 +82,8 @@ build GLTest.exe: CXX_EXECUTABLE_LINKER__GLTest_Debug CMakeFiles/GLTest.dir/main
 
 build cmake_object_order_depends_target_CC: phony || CMakeFiles/CC.dir
 
-build CMakeFiles/CC.dir/main2.cpp.obj: CXX_COMPILER__CC_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/main2.cpp || cmake_object_order_depends_target_CC
-  DEP_FILE = CMakeFiles\CC.dir\main2.cpp.obj.d
+build CMakeFiles/CC.dir/DP.cpp.obj: CXX_COMPILER__CC_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/DP.cpp || cmake_object_order_depends_target_CC
+  DEP_FILE = CMakeFiles\CC.dir\DP.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\CC.dir
   OBJECT_FILE_DIR = CMakeFiles\CC.dir
@@ -102,7 +102,7 @@ build CMakeFiles/CC.dir/main3.cpp.obj: CXX_COMPILER__CC_Debug C$:/Users/Mohamed/
 #############################################
 # Link the executable CC.exe
 
-build CC.exe: CXX_EXECUTABLE_LINKER__CC_Debug CMakeFiles/CC.dir/main2.cpp.obj CMakeFiles/CC.dir/main3.cpp.obj
+build CC.exe: CXX_EXECUTABLE_LINKER__CC_Debug CMakeFiles/CC.dir/DP.cpp.obj CMakeFiles/CC.dir/main3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CC.dir
@@ -144,6 +144,105 @@ build temp.exe: CXX_EXECUTABLE_LINKER__temp_Debug CMakeFiles/temp.dir/main3.cpp.
   TARGET_FILE = temp.exe
   TARGET_IMPLIB = libtemp.dll.a
   TARGET_PDB = temp.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Graph
+
+
+#############################################
+# Order-only phony target for Graph
+
+build cmake_object_order_depends_target_Graph: phony || CMakeFiles/Graph.dir
+
+build CMakeFiles/Graph.dir/Graph.cpp.obj: CXX_COMPILER__Graph_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/Graph.cpp || cmake_object_order_depends_target_Graph
+  DEP_FILE = CMakeFiles\Graph.dir\Graph.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Graph.dir
+  OBJECT_FILE_DIR = CMakeFiles\Graph.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Graph
+
+
+#############################################
+# Link the executable Graph.exe
+
+build Graph.exe: CXX_EXECUTABLE_LINKER__Graph_Debug CMakeFiles/Graph.dir/Graph.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Graph.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Graph.exe
+  TARGET_IMPLIB = libGraph.dll.a
+  TARGET_PDB = Graph.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target A
+
+
+#############################################
+# Order-only phony target for A
+
+build cmake_object_order_depends_target_A: phony || CMakeFiles/A.dir
+
+build CMakeFiles/A.dir/A.cpp.obj: CXX_COMPILER__A_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/A.cpp || cmake_object_order_depends_target_A
+  DEP_FILE = CMakeFiles\A.dir\A.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\A.dir
+  OBJECT_FILE_DIR = CMakeFiles\A.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target A
+
+
+#############################################
+# Link the executable A.exe
+
+build A.exe: CXX_EXECUTABLE_LINKER__A_Debug CMakeFiles/A.dir/A.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\A.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = A.exe
+  TARGET_IMPLIB = libA.dll.a
+  TARGET_PDB = A.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Math
+
+
+#############################################
+# Order-only phony target for Math
+
+build cmake_object_order_depends_target_Math: phony || CMakeFiles/Math.dir
+
+build CMakeFiles/Math.dir/math.cpp.obj: CXX_COMPILER__Math_Debug C$:/Users/Mohamed/CLionProjects/Competitive$ Programming/math.cpp || cmake_object_order_depends_target_Math
+  DEP_FILE = CMakeFiles\Math.dir\math.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  OBJECT_DIR = CMakeFiles\Math.dir
+  OBJECT_FILE_DIR = CMakeFiles\Math.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Math
+
+
+#############################################
+# Link the executable Math.exe
+
+build Math.exe: CXX_EXECUTABLE_LINKER__Math_Debug CMakeFiles/Math.dir/math.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Math.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Math.exe
+  TARGET_IMPLIB = libMath.dll.a
+  TARGET_PDB = Math.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target stringProcessing
@@ -204,9 +303,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build A: phony A.exe
+
 build CC: phony CC.exe
 
 build GLTest: phony GLTest.exe
+
+build Graph: phony Graph.exe
+
+build Math: phony Math.exe
 
 build stringProcessing: phony stringProcessing.exe
 
@@ -220,7 +325,7 @@ build temp: phony temp.exe
 #############################################
 # Folder: C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug
 
-build all: phony GLTest.exe CC.exe temp.exe stringProcessing.exe
+build all: phony GLTest.exe CC.exe temp.exe Graph.exe A.exe Math.exe stringProcessing.exe
 
 # =============================================================================
 # Built-in targets

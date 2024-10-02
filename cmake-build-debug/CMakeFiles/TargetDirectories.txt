@@ -1,6 +1,9 @@
 C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/GLTest.dir
 C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/CC.dir
 C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/temp.dir
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/Graph.dir
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/A.dir
+C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/Math.dir
 C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/stringProcessing.dir
 C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Mohamed/CLionProjects/Competitive Programming/cmake-build-debug/CMakeFiles/rebuild_cache.dir
